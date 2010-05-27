@@ -1,4 +1,12 @@
 #=CHANGELOG
+
+---- github.com/gavinM:
+
+replaced String#to_a call in Service.rb(50) to String#split("\n") to fix compatibility with Ruby 1.9.1 
+as (Ruby 1.9.*).include?(String#to_a) # => false
+
+----
+
 #==version 0.3.1_AuthSub
 #* Git repo by mgornick to implement Authsub authentication into the GCal4Ruby gem
 #==version 0.3.1
